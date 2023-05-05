@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
-   padding: 0; 
-   margin: 0;
-   border: 0;
-   box-sizing: border-box; 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-image: linear-gradient(90deg, rgb(82, 4, 56), rgb(179, 127, 135));
     box-sizing: border-box;
 }
 
-.cabecalho{
-    /* background-color: #c4c4c4; */
+.cabecalho {
+    background-color: #c4c4c4;
     height: 50px;
     position: fixed;
     right: 0;
     left: 0;
-    
+
 }
 
-.cabecalho_ul{
+.cabecalho_ul {
     display: flex;
     justify-content: center;
-    gap:50px;
+    gap: 50px;
     padding-top: 10px;
 }
 
-li{
+li {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #000000;
 }
 
-li:hover{
+li:hover {
     font-size: 30px;
 }
 
-section{
+.secao_dados {
     display: flex;
     justify-content: center;
     gap: 124px;
@@ -48,39 +48,70 @@ section{
     padding-top: 100px;
 }
 
-.meus_dados{
+.meus_dados {
     width: 817px;
 }
 
-.meus_dados_titulo{
+.meus_dados_titulo {
     font-size: 6rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.meus_dados_titulo_subtitulo{
+.meus_dados_titulo_subtitulo {
     padding-bottom: 60px;
 }
 
-.contato{
+.contato {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    padding: 2px;
+    padding: 5px;
 }
 
-.foto_perfil{
-    width: 400px;;
+.foto_perfil {
+    width: 400px;
+    ;
     height: 400px;
     border-radius: 426px;
     border: solid 4px;
 }
 
-.foto_perfil_com_sociais{
+.foto_perfil_com_sociais {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
+
+.secao_sobre_mim{
+    display: flex;
+    align-items:center;
+    gap: 200px;
+    padding:50px 190px;
+}
+
+.imagem_sobre_mim {
+    width: 588px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.sobre_mim{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    padding: 10px 0px;
+}
+
+.sobre_mim_texto{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    width: 600px;
+}
+
