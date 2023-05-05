@@ -33,6 +33,7 @@ li {
     font-weight: 400;
     font-size: 20px;
     color: #000000;
+    text-decoration: none;
 }
 
 li:hover {
@@ -86,11 +87,11 @@ li:hover {
     gap: 30px;
 }
 
-.secao_sobre_mim{
+.secao_sobre_mim {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 200px;
-    padding:50px 190px;
+    padding: 50px 190px;
 }
 
 .imagem_sobre_mim {
@@ -99,7 +100,7 @@ li:hover {
     object-fit: cover;
 }
 
-.sobre_mim{
+.sobre_mim_titulo {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -107,7 +108,7 @@ li:hover {
     padding: 10px 0px;
 }
 
-.sobre_mim_texto{
+.sobre_mim_texto {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -115,3 +116,38 @@ li:hover {
     width: 600px;
 }
 
+.formacao_titulo,
+.experiencias_titulo,
+.habilidades_titulo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    padding: 0px 160px;
+}
+
+.formacao_paragrafos,
+.experiencias_paragrafos {
+    display: flex;
+    gap: 250px;
+    padding: 32px 190px;
+}
+
+.formacao_paragrafo_gestao,
+.formacao_paragrafo_alura,
+.experiencias_paragrafo_alura,
+.experiencias_paragrafo_desafio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: #c4c4c4;
+    border-radius: 24px;
+    height: 179px;
+    width: 500px;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.habilidades_logo{
+    padding: 32px 190px ;
+}
