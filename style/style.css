@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root{
+    --cor-primaria: #110f1a;
+    --cor-secundaria: #1c3049;
+    --cor-terciaria:#ca8e61;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,13 +13,18 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    background-image: linear-gradient(90deg, rgb(82, 4, 56), rgb(179, 127, 135));
+    background-color:var(--cor-secundaria);
     box-sizing: border-box;
+    color:var(--cor-terciaria);
 }
 
 .cabecalho {
-    background-color: #c4c4c4;
+    background-color:var(--cor-primaria);
     height: 50px;
     position: fixed;
     right: 0;
@@ -28,15 +39,15 @@ body {
     padding-top: 10px;
 }
 
-li {
+li,.li {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
     text-decoration: none;
+    color: var(--cor-terciaria);
 }
 
-li:hover {
+.li:hover {
     font-size: 30px;
 }
 
@@ -45,7 +56,7 @@ li:hover {
     justify-content: center;
     gap: 124px;
     height: 720px;
-    background-color: #c4c4c4;
+    background-color: var(--cor-primaria);
     padding-top: 100px;
 }
 
@@ -60,16 +71,23 @@ li:hover {
 }
 
 .meus_dados_titulo_subtitulo {
-    padding-bottom: 60px;
+    padding: 0px 0px 60px 7px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .contato {
-    display: flex;
-    align-items: baseline;
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    padding: 5px;
+    padding: 7px;
+}
+
+.meus_dados_titulo_paragrafo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom:12px;
 }
 
 .foto_perfil {
@@ -85,6 +103,26 @@ li:hover {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.logo_linkedin,
+.logo_github,
+.logo_instagram {
+    width: 48px;
+    height: 48px;
+    transition-duration: 0.5s;
+}
+
+.logo_linkedin:hover,
+.logo_github:hover,
+.logo_instagram:hover {
+    width: 70px;
+    height: 70px;
 }
 
 .secao_sobre_mim {
@@ -104,7 +142,6 @@ li:hover {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    color: #000000;
     padding: 10px 0px;
 }
 
@@ -112,17 +149,16 @@ li:hover {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 25px;
-    color: #000000;
     width: 600px;
 }
 
 .formacao_titulo,
 .experiencias_titulo,
-.habilidades_titulo {
+.habilidades_titulo,
+.interesses_titulo {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    color: #000000;
     padding: 0px 160px;
 }
 
@@ -140,7 +176,7 @@ li:hover {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 25px;
-    background-color: #c4c4c4;
+    background-color:var(--cor-primaria);
     border-radius: 24px;
     height: 179px;
     width: 500px;
@@ -148,6 +184,7 @@ li:hover {
     text-decoration: none;
 }
 
-.habilidades_logo{
-    padding: 32px 190px ;
+.habilidades_logo,
+.interesses_logo {
+    padding: 32px 190px;
 }
