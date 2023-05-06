@@ -27,7 +27,7 @@ body {
 
 .cabecalho {
     background-color: var(--cor-primaria);
-    height: 50px;
+    height: 3.1rem;
     position: fixed;
     right: 0;
     left: 0;
@@ -37,32 +37,32 @@ body {
 .cabecalho_ul {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-top: 10px;
+    gap: 3.1rem;
+    padding-top: 0.6rem;
 }
 
 li,
 .li {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--cor-terciaria);
 }
 
 .li:hover {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .secao_dados {
     display: flex;
     justify-content: center;
-    gap: 70px;
-    height: 720px;
+    gap: 4.3rem;
+    height: 45rem;
     background-color: var(--cor-primaria);
-    padding-top: 160px;
+    padding-top: 10rem;
 }
 
 .meus_dados {
-    width: 817px;
+    width: 51rem;
 }
 
 .meus_dados_titulo {
@@ -70,76 +70,76 @@ li,
 }
 
 .meus_dados_titulo_subtitulo {
-    padding: 0px 0px 60px 7px;
+    padding: 0rem 0rem 3.7rem 0.4rem;
 }
 
 .contato {
     font-size: 2rem;
-    padding: 7px;
+    padding: 0.4rem;
 }
 
 .meus_dados_titulo_paragrafo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding-bottom: 12px;
+    gap: 0.6rem;
+    padding-bottom: 0.75rem;
 }
 
 .foto_perfil {
-    width: 400px;
-    height: 400px;
-    border-radius: 426px;
-    border: solid 4px;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 26.62rem;
+    border: solid 0.25rem;
 }
 
 .foto_perfil_com_sociais {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.87rem;
 }
 
 .sociais {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .logo_linkedin,
 .logo_github,
 .logo_instagram {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     transition-duration: 0.5s;
 }
 
 .logo_linkedin:hover,
 .logo_github:hover,
 .logo_instagram:hover {
-    width: 70px;
-    height: 70px;
+    width: 4.37rem;
+    height: 4.37rem;
 }
 
 .secao_sobre_mim {
     display: flex;
     align-items: center;
-    gap: 200px;
-    padding: 100px 190px;
+    gap: 12.5rem;
+    padding: 6.25rem 11.87rem;
 }
 
 .imagem_sobre_mim {
-    width: 588px;
-    height: 600px;
+    width: 36.75rem;
+    height: 37.5rem;
     object-fit: cover;
 }
 
 .sobre_mim_titulo {
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 1.87rem;
+    padding-bottom: 0.62rem;
 }
 
 .sobre_mim_texto {
-    font-size: 25px;
-    width: 600px;
+    font-size: 1.56rem;
+    width: 37.5rem;
     text-align:justify;
 }
 
@@ -147,38 +147,38 @@ li,
 .experiencias_titulo,
 .habilidades_titulo,
 .interesses_titulo {
-    font-size: 30px;
-    padding: 0px 190px;
+    font-size: 1.87rem;
+    padding: 0rem 11.87rem;
 }
 
 .formacao_paragrafos,
 .experiencias_paragrafos {
     display: flex;
     align-items: center;
-    gap: 300px;
-    padding: 32px 200px;
+    gap: 18.75rem;
+    padding: 2rem 12.5rem;
 }
 
 .formacao_paragrafo_gestao,
 .formacao_paragrafo_alura,
 .experiencias_paragrafo_alura,
 .experiencias_paragrafo_desafio {
-    font-size: 25px;
+    font-size: 1.5rem;
     background-color: var(--cor-primaria);
-    border-radius: 24px;
-    height: 179px;
-    width: 500px;
-    padding: 50px;
+    border-radius: 1.5rem;
+    height: 11.18rem;
+    width: 31.25rem;
+    padding: 3.12rem;
     text-decoration: none;
 }
 
 .habilidades_logo,
 .interesses_logo {
-    padding: 32px 190px;
+    padding: 2rem 11.87rem;
 }
 
 .rodape{
-    height: 200px;
+    height: 12.5rem;
     background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
@@ -186,11 +186,12 @@ li,
 }
 
 .rodape_paragrafo{
-    font-size: 20px;
-    padding: 25px;
+    font-size: 1.25rem;
+    padding: 1.56rem;
 }
 
 .rodape_autor{
-    padding: 25px;
+    padding: 1.56rem;
     text-align: center;
 }
+
