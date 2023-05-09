@@ -29,8 +29,8 @@ body {
     background-color: var(--cor-primaria);
     height: 3.1rem;
     position: fixed;
-    right: 0;
-    left: 0;
+    right: 0rem;
+    left: 0rem;
 
 }
 
@@ -59,10 +59,7 @@ li,
     height: 45rem;
     background-color: var(--cor-primaria);
     padding-top: 10rem;
-}
-
-.meus_dados {
-    width: 51rem;
+    width: 100vw;
 }
 
 .meus_dados_titulo {
@@ -134,13 +131,12 @@ li,
 
 .sobre_mim_titulo {
     font-size: 1.87rem;
-    padding-bottom: 0.62rem;
+    padding-bottom: 2rem;
 }
 
 .sobre_mim_texto {
     font-size: 1.56rem;
-    width: 37.5rem;
-    text-align:justify;
+    text-align: justify;
 }
 
 .formacao_titulo,
@@ -154,8 +150,8 @@ li,
 .formacao_paragrafos,
 .experiencias_paragrafos {
     display: flex;
-    align-items: center;
-    gap: 18.75rem;
+    justify-content: center;
+    gap: 21.75rem;
     padding: 2rem 12.5rem;
 }
 
@@ -163,12 +159,12 @@ li,
 .formacao_paragrafo_alura,
 .experiencias_paragrafo_alura,
 .experiencias_paragrafo_desafio {
-    font-size: 1.5rem;
+    font-size: 1.87rem;
     background-color: var(--cor-primaria);
     border-radius: 1.5rem;
     height: 11.18rem;
     width: 31.25rem;
-    padding: 3.12rem;
+    padding: 2rem;
     text-decoration: none;
 }
 
@@ -177,7 +173,7 @@ li,
     padding: 2rem 11.87rem;
 }
 
-.rodape{
+.rodape {
     height: 12.5rem;
     background-color: var(--cor-primaria);
     display: flex;
@@ -185,13 +181,70 @@ li,
     align-items: center;
 }
 
-.rodape_paragrafo{
+.rodape_paragrafo {
     font-size: 1.25rem;
     padding: 1.56rem;
 }
 
-.rodape_autor{
+.rodape_autor {
     padding: 1.56rem;
     text-align: center;
 }
 
+@media(max-width:1566px) {
+    .secao_dados {
+        gap: 0rem;
+    }
+
+    .secao_sobre_mim {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        gap: 12rem;
+        padding: 2rem 12.5rem;
+    }
+
+    .formacao_paragrafo_gestao,
+    .formacao_paragrafo_alura,
+    .experiencias_paragrafo_alura,
+    .experiencias_paragrafo_desafio {
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1336px) {
+
+
+    .formacao_paragrafo_gestao,
+    .formacao_paragrafo_alura,
+    .experiencias_paragrafo_alura,
+    .experiencias_paragrafo_desafio {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width:1197px) {
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        gap: 12rem;
+        padding: 2rem 12.5rem;
+    }
+
+    .formacao_paragrafo_gestao, .formacao_paragrafo_alura,
+    .experiencias_paragrafo_alura,
+    .experiencias_paragrafo_desafio {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:930px){
+
+}
