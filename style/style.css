@@ -25,13 +25,25 @@ body {
     font-weight: 400;
 }
 
+.menu_lista{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.menu_mobile_icone{
+    display: none;
+}
+
+.menu_mobile{
+    display: none;
+}
+
 .cabecalho {
     background-color: var(--cor-primaria);
-    height: 3.1rem;
     position: fixed;
     right: 0rem;
     left: 0rem;
-
 }
 
 .cabecalho_ul {
@@ -90,7 +102,7 @@ li,
 }
 
 .foto_perfil_com_sociais {
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.87rem;
@@ -137,6 +149,8 @@ li,
 .sobre_mim_texto {
     font-size: 1.56rem;
     text-align: justify;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
 }
 
 .formacao_titulo,
@@ -159,18 +173,46 @@ li,
 .formacao_paragrafo_alura,
 .experiencias_paragrafo_alura,
 .experiencias_paragrafo_desafio {
-    font-size: 1.87rem;
+    font-size: 1.6rem;
     background-color: var(--cor-primaria);
     border-radius: 1.5rem;
     height: 11.18rem;
     width: 31.25rem;
     padding: 2rem;
-    text-decoration: none;
+}
+
+.formacao_paragrafo_mobile,
+.experiencias_paragrafo_mobile {
+    background-color: var(--cor-primaria);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    height: 8, 75rem;
+    width: 23.6rem;
+    padding: 1rem;
+    display: none;
 }
 
 .habilidades_logo,
 .interesses_logo {
     padding: 2rem 11.87rem;
+}
+
+.icone_html,
+.icone_css,
+.icone_javascript,
+.icone_git{
+    cursor: pointer;
+    width: 6.25rem;
+    height: 6.25rem;
+    transition-duration: 0.5s;
+}
+
+.icone_html:hover,
+.icone_css:hover,
+.icone_javascript:hover,
+.icone_git:hover{
+    width: 8%;
+    height: 8%;
 }
 
 .rodape {
@@ -237,7 +279,8 @@ li,
         padding: 2rem 12.5rem;
     }
 
-    .formacao_paragrafo_gestao, .formacao_paragrafo_alura,
+    .formacao_paragrafo_gestao,
+    .formacao_paragrafo_alura,
     .experiencias_paragrafo_alura,
     .experiencias_paragrafo_desafio {
         padding: 1.5rem;
@@ -245,6 +288,130 @@ li,
     }
 }
 
-@media(max-width:930px){
+@media(max-width:930px) {
+    .cabecalho_ul{
+        display: none;
+    }
+
+    .menu_lista{
+        justify-content: end;
+        padding: 30px 25px 0px 0px;
+    }
+
+    .menu_mobile_icone{
+        display: block;
+    }
+
+    .menu_mobile_icone button{
+        background-color: var(--cor-secundaria);
+        border: #ca8e61 3px solid;
+        cursor: pointer;
+    }
+
+    .revela{
+        display: block;
+    }
+
+    .menu_mobile_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+    
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        flex-direction: column;
+        gap: 0px;
+        padding: 2rem 6rem
+    }
+
+
+    .formacao_paragrafo_gestao,
+    .formacao_paragrafo_alura,
+    .experiencias_paragrafo_alura,
+    .experiencias_paragrafo_desafio {
+        display: none;
+    }
+
+    .formacao_paragrafo_mobile,
+    .experiencias_paragrafo_mobile {
+        display: contents;
+        display: var(--cor-primaria);
+    }
+
+    .hard_skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
+
+@media(max-width:785px){
+    .secao_dados {
+        flex-direction:column-reverse;
+        height: 59rem;
+        padding-top: 0rem;
+    }
+
+    .meus_dados_titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .meus_dados_titulo_subtitulo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sociais{
+        position: absolute;
+        top: 850px;
+    }
+
+    .secao_sobre_mim{
+        padding: 2rem;
+    }
+
+    .imagem_sobre_mim{
+        display: none;
+    }
+
+}
+
+@media (max-width:690px) {
+    
+    .habilidade_icone_html,
+    .habilidade_icone_css,
+    .habilidade_icone_javascript,
+    .habilidade_icone_git,
+    .icone_html,
+    .icone_css,
+    .icone_javascript,
+    .icone_git{
+        width: 50px;
+        height: 50px;
+    }
+
+    .secao_sobre_mim{
+        padding: 1rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        padding:auto;
+    }
+
+    .habilidades_logo,
+    .interesses_logo {
+    padding: 2rem 6.87rem;
+    display: flex;
+    justify-content: center;
+
+}
+    
+} 

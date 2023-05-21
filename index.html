@@ -11,7 +11,7 @@
 
 <body>
     <header class="cabecalho">
-        <nav>
+        <nav class="menu_lista">
             <ul class="cabecalho_ul">
                 <li><a class="li" href="#dados">home</a></li>
 
@@ -25,7 +25,30 @@
 
                 <li><a class="li" href="#interesses">Interesses</a></li>
             </ul>
+
+            <div class="menu_mobile_icone">
+                <button onclick="mostraMenu()"><img class="icone" src="./assets/menuMobile.svg" alt="ícone de menu"></button>
+            </div>
         </nav>
+
+        <div class="menu_mobile">
+            <ul class="menu_mobile_ul">
+                <li><a class="li" href="#dados">home</a></li>
+
+                <li><a class="li" href="#sobre_mim">Sobre mim</a></li>
+
+                <li><a class="li" href="#formacao">Formação</a></li>
+
+                <li><a class="li" href="#experiencia">Experiências</a></li>
+
+                <li><a class="li" href="#habilidades">Habilidades</a></li>
+
+                <li><a class="li" href="#interesses">Interesses</a></li>
+            </ul>
+        </div>
+
+
+
     </header>
     <section class="secao_dados" id="dados">
         <div class="meus_dados">
@@ -49,11 +72,11 @@
         <div class="foto_perfil_com_sociais">
             <img class="foto_perfil" src="./assets/fotor_2023-5-5_9_35_9.jpg" alt="minha foto">
             <div class="sociais">
-                <a href="https://www.linkedin.com/in/rafael-monteiro-48b4a272/" target="_blank"><img class="logo_linkedin"
-                        src="./assets/icons8-linkedin.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/rafael-monteiro-48b4a272/" target="_blank"><img
+                        class="logo_linkedin" src="./assets/icons8-linkedin.svg" alt=""></a>
                 <a class="github" href="https://github.com/MonteiroBRR" target="_blank"><img class="logo_github"
                         src="./assets/icons8-github.svg" alt=""></a>
-                <a href="https://www.instagram.com/rafaelllmonteiro/" target="_blank"><img class="logo_instagram" 
+                <a href="https://www.instagram.com/rafaelllmonteiro/" target="_blank"><img class="logo_instagram"
                         src="./assets/icons8-instagram.svg" alt=""></a>
             </div>
         </div>
@@ -71,9 +94,10 @@
                     estudar
                     programação e linguagens de programação, na esperança de conseguir uma posição como programador em
                     um futuro
-                    próximo..
+                    próximo..</p>
 
-                    Nos meus momentos de lazer, gosto de estar com a minha familia e jogar videogames. Acredito que a
+                <p class="sobre_mim_texto"> Nos meus momentos de lazer, gosto de estar com a minha familia e jogar
+                    videogames. Acredito que a
                     programação
                     pode me proporcionar novas oportunidades e estou disposto a dedicar meu tempo e esforço para
                     alcançar meus
@@ -82,50 +106,72 @@
                     estou determinado a seguir em frente em minha jornada profissional.</p>
             </div>
         </section>
-        <section class="secao_formacao" id="formacao">
-            <h3 class="formacao_titulo">Formação</h3>
-            <div class="formacao_paragrafos">
-                <p class="formacao_paragrafo_gestao">Gestão em segurança privada - Universidade Estácio de Sá (conclusão
-                    30/06/2023)</p>
-                <p class="formacao_paragrafo_alura">Formações Alura - Certificados <a
-                        href="https://cursos.alura.com.br/user/rafaelll-monteiro/fullCertificate/dd87aa1a00835b82b530988e123bf71c">aqui</a>
-                </p>
-            </div>
-        </section>
-        <section class="experiencias" id="experiencias">
-            <h3 class="experiencias_titulo">experiências</h3>
-            <div class="experiencias_paragrafos">
-                <p class="experiencias_paragrafo_alura">Projetos desenvolvidos com o curso da Alura</p>
-                <p class="experiencias_paragrafo_desafio">Esta página que foi um desafio da <a
-                        href="https://www.linkedin.com/in/milenaemmert/">Milena Emmert</a> aos integrantes do Alura
-                    include.</p>
-            </div>
-        </section>
-        <section class="habilidades" id="habilidades">
-            <h3 class="habilidades_titulo">Habilidades:</h3>
-            <div class="habilidades_logo">
-                <img src="./assets/icons8-html-5.svg" alt="logo do html">
-                <img src="./assets/icons8-css3.svg" alt="logo do css">
-                <img src="./assets/icons8-javascript.svg" alt="logo javascript">
-                <img src="./assets/icons8-git.svg" alt="logo git">
-            </div>
-        </section>
-        <section class="interesses" id="interesses">
-            <h3 class="interesses_titulo">Interesses:</h3>
-            <div class="interesses_logo">
-                <img src="./assets/icons8-html-5.svg" alt="logo do html">
-                <img src="./assets/icons8-css3.svg" alt="logo do css">
-                <img src="./assets/icons8-javascript.svg" alt="logo javascript">
-                <img src="./assets/icons8-git.svg" alt="logo git">
-            </div>
 
+        <section class="hard_skills">
+            <div class="secao_formacao" id="formacao">
+                <h3 class="formacao_titulo">Formação</h3>
+                <div class="formacao_paragrafos">
+                    <p class="formacao_paragrafo_gestao">Gestão em segurança privada - Universidade Estácio de Sá (conclusão
+                        30/06/2023)
+                    </p>
+                    <p class="formacao_paragrafo_alura">Empresa Zenvia - Alura include (2023)<br>Cursos de HTML,CSS e
+                        javascript.<br>Certificados <a
+                            href="https://cursos.alura.com.br/user/rafaelll-monteiro/fullCertificate/dd87aa1a00835b82b530988e123bf71c">aqui</a>
+                    </p>
+                    <p class="formacao_paragrafo_mobile">
+                        Gestão em segurança privada - Universidade Estácio de Sá (conclusão
+                        30/06/2023).<br><br>
+                        Empresa Zenvia - Alura include (2023)<br>Cursos de HTML,CSS e javascript.<br>Certificados <a
+                            href="https://cursos.alura.com.br/user/rafaelll-monteiro/fullCertificate/dd87aa1a00835b82b530988e123bf71c">aqui</a>
+                    </p>
+                </div>
+            </div>
+            <div class="experiencias" id="experiencias">
+                <h3 class="experiencias_titulo">experiências</h3>
+                <div class="experiencias_paragrafos">
+                    <p class="experiencias_paragrafo_alura">Projetos desenvolvidos com o curso da Alura</p>
+                    <p class="experiencias_paragrafo_desafio">Esta página que foi um desafio da <a
+                            href="https://www.linkedin.com/in/milenaemmert/">Milena Emmert</a> aos integrantes do Alura
+                        include.
+                    </p>
+                    <p class="experiencias_paragrafo_mobile">
+                        Projetos desenvolvidos com o curso da Alura. <br><br>
+                        Esta página que foi um desafio da <a href="https://www.linkedin.com/in/milenaemmert/">Milena
+                            Emmert</a> aos integrantes do Alura
+                        include.
+                    </p>
+                </div>
+            </div>
+            <div class="habilidades" id="habilidades">
+                <h3 class="habilidades_titulo">Habilidades</h3>
+                <div class="habilidades_logo">
+                    <img class="habilidade_icone_html" src="./assets/icons8-html-5.svg" alt="logo do html">
+                    <img class="habilidade_icone_css" src="./assets/icons8-css3.svg" alt="logo do css">
+                    <img class="habilidade_icone_javascript" src="./assets/icons8-javascript.svg" alt="logo javascript">
+                    <img class="habilidade_icone_git" src="./assets/icons8-git.svg" alt="logo git">
+                </div>
+            </div>
+            <div class="interesses" id="interesses">
+                <h3 class="interesses_titulo">Interesses</h3>
+                <div class="interesses_logo">
+                    <img onclick="mostraTextoHtml()" class="icone_html" src="./assets/icons8-html-5.svg" alt="logo do html">
+                    <img onclick="mostraTextoCSS()" class="icone_css" src="./assets/icons8-css3.svg" alt="logo do css">
+                    <img onclick="mostraTextoJs()" class="icone_javascript" src="./assets/icons8-javascript.svg" alt="logo javascript">
+                    <img onclick="mostraTextoGit()" class="icone_git" src="./assets/icons8-git.svg" alt="logo git">
+                </div>
+                <div class="texto_interesses">
+
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
-        <p class="rodape_paragrafo">Fale comigo através do <a href="mailto:rafaelll-monteiro@hotmail.com"> e-mail</a> ou do <a
-                href="http://ml6.in/KwabJ">whatsapp</a>
+        <p class="rodape_paragrafo">Fale comigo através do <a href="mailto:rafaelll-monteiro@hotmail.com"> e-mail</a> ou
+            do <a href="http://ml6.in/KwabJ">whatsapp</a>
         </p>
         <p class="rodape_autor">Rafael Monteiro<br>2023</p>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
