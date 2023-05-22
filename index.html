@@ -27,7 +27,8 @@
             </ul>
 
             <div class="menu_mobile_icone">
-                <button onclick="mostraMenu()"><img class="icone" src="./assets/menuMobile.svg" alt="ícone de menu"></button>
+                <button class="botaoMenuMobile"><img class="icone" src="./assets/menuMobile.svg"
+                        alt="ícone de menu"></button>
             </div>
         </nav>
 
@@ -111,10 +112,11 @@
             <div class="secao_formacao" id="formacao">
                 <h3 class="formacao_titulo">Formação</h3>
                 <div class="formacao_paragrafos">
-                    <p class="formacao_paragrafo_gestao">Gestão em segurança privada - Universidade Estácio de Sá (conclusão
+                    <p class="background-caixa">Gestão em segurança privada - Universidade Estácio de Sá
+                        (conclusão
                         30/06/2023)
                     </p>
-                    <p class="formacao_paragrafo_alura">Empresa Zenvia - Alura include (2023)<br>Cursos de HTML,CSS e
+                    <p class="background-caixa">Empresa Zenvia - Alura include (2023)<br>Cursos de HTML,CSS e
                         javascript.<br>Certificados <a
                             href="https://cursos.alura.com.br/user/rafaelll-monteiro/fullCertificate/dd87aa1a00835b82b530988e123bf71c">aqui</a>
                     </p>
@@ -129,8 +131,8 @@
             <div class="experiencias" id="experiencias">
                 <h3 class="experiencias_titulo">experiências</h3>
                 <div class="experiencias_paragrafos">
-                    <p class="experiencias_paragrafo_alura">Projetos desenvolvidos com o curso da Alura</p>
-                    <p class="experiencias_paragrafo_desafio">Esta página que foi um desafio da <a
+                    <p class="background-caixa">Projetos desenvolvidos com o curso da Alura</p>
+                    <p class="background-caixa">Esta página que foi um desafio da <a
                             href="https://www.linkedin.com/in/milenaemmert/">Milena Emmert</a> aos integrantes do Alura
                         include.
                     </p>
@@ -145,21 +147,22 @@
             <div class="habilidades" id="habilidades">
                 <h3 class="habilidades_titulo">Habilidades</h3>
                 <div class="habilidades_logo">
-                    <img class="habilidade_icone_html" src="./assets/icons8-html-5.svg" alt="logo do html">
-                    <img class="habilidade_icone_css" src="./assets/icons8-css3.svg" alt="logo do css">
-                    <img class="habilidade_icone_javascript" src="./assets/icons8-javascript.svg" alt="logo javascript">
-                    <img class="habilidade_icone_git" src="./assets/icons8-git.svg" alt="logo git">
+                    <img class="habilidade_icone" src="./assets/icons8-html-5.svg" alt="logo do html">
+                    <img class="habilidade_icone" src="./assets/icons8-css3.svg" alt="logo do css">
+                    <img class="habilidade_icone" src="./assets/icons8-javascript.svg" alt="logo javascript">
+                    <img class="habilidade_icone" src="./assets/icons8-git.svg" alt="logo git">
                 </div>
             </div>
             <div class="interesses" id="interesses">
                 <h3 class="interesses_titulo">Interesses</h3>
                 <div class="interesses_logo">
-                    <img onclick="mostraTextoHtml()" class="icone_html" src="./assets/icons8-html-5.svg" alt="logo do html">
-                    <img onclick="mostraTextoCSS()" class="icone_css" src="./assets/icons8-css3.svg" alt="logo do css">
-                    <img onclick="mostraTextoJs()" class="icone_javascript" src="./assets/icons8-javascript.svg" alt="logo javascript">
-                    <img onclick="mostraTextoGit()" class="icone_git" src="./assets/icons8-git.svg" alt="logo git">
+                    <img id="interesse_html" class="icone_interesses" src="./assets/icons8-html-5.svg" alt="logo do html">
+                    <img id="interesse_css" class="icone_interesses" src="./assets/icons8-css3.svg" alt="logo do css">
+                    <img id="interesse_javascript" class="icone_interesses" src="./assets/icons8-javascript.svg" alt="logo javascript">
+                    <img id="interesse_git" class="icone_interesses" src="./assets/icons8-git.svg" alt="logo git">
                 </div>
-                <div class="texto_interesses">
+                <div id="caixa-interesses" class="caixa_interesses">
+                    <p id="texto-interesses" class="background-caixa-interesses"></p>
 
                 </div>
             </div>
