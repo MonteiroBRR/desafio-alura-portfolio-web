@@ -11,15 +11,13 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-}
-
-a {
     text-decoration: none;
 }
 
 body {
     background-color: var(--cor-secundaria);
     box-sizing: border-box;
+    width: 100vw;
     color: var(--cor-terciaria);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -40,6 +38,7 @@ body {
 }
 
 .cabecalho {
+    width: 100vw;
     background-color: var(--cor-primaria);
     position: fixed;
     right: 0rem;
@@ -166,7 +165,7 @@ li,
     display: flex;
     justify-content: center;
     gap: 21.75rem;
-    padding: 2rem 12.5rem;
+    padding: 2rem
 }
 .background-caixa, 
 .background-caixa-interesses{
@@ -241,8 +240,8 @@ li,
 
     .formacao_paragrafos,
     .experiencias_paragrafos {
-        gap: 12rem;
-        padding: 2rem 12.5rem;
+        gap: 10rem;
+        padding: 2rem 10.5rem;
     }
 
     .background-caixa,
@@ -252,29 +251,24 @@ li,
     }
 }
 
-@media(max-width:1336px) {
+@media(max-width:1210px) {
 
 
     .background-caixa,
     .background-caixa-interesses {
-        padding: 2rem;
-        font-size: 1.5rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        height: auto;
     }
 
-}
-
-@media(max-width:1197px) {
+    .secao_sobre_mim {
+        gap: 6rem;
+        padding: 6rem 9rem;
+    }
 
     .formacao_paragrafos,
     .experiencias_paragrafos {
-        gap: 12rem;
-        padding: 2rem 12.5rem;
-    }
-
-    .background-caixa,
-    .background-caixa-interesses {
-        padding: 1.5rem;
-        font-size: 1.1rem;
+        padding: 2rem 9rem;
     }
 }
 
@@ -310,11 +304,9 @@ li,
         list-style: none;
     }
 
-    .formacao_paragrafos,
-    .experiencias_paragrafos {
-        flex-direction: column;
-        gap: 0px;
-        padding: 2rem 6rem
+    .secao_sobre_mim{
+        gap:4rem;
+        padding: 3rem 9rem ;
     }
 
     .background-caixa {
@@ -359,44 +351,54 @@ li,
     }
 
     .secao_sobre_mim{
-        padding: 2rem;
+        padding: 1rem;
+    }
+
+    .sobre_mim_texto{
+        font-size: 1.4rem;
     }
 
     .imagem_sobre_mim{
         display: none;
     }
-
 }
 
 @media (max-width:690px) {
+    .formacao_paragrafos,
+    .experiencias_paragrafos{
+        padding: 2rem 5rem;
+    }
 
     .habilidade_icone,
     .icone_interesses{
-        width: 50px;
-        height: 50px;
+        width: 3rem;
+        height: 3rem;
     }
 
     .icone_interesses:hover{
-        width: 70px;
-        height: 70px;
-    }
-    
-
-    .secao_sobre_mim{
-        padding: 1rem;
-    }
-
-    .formacao_paragrafos,
-    .experiencias_paragrafos {
-        padding:auto;
+        width: 4.3rem;
+        height: 4.3rem;
     }
 
     .habilidades_logo,
     .interesses_logo {
-    padding: 2rem 6.87rem;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
-
-}
+    }
     
-} 
+}
+
+@media(max-width:558px){
+    .formacao_titulo,
+    .experiencias_titulo,
+    .habilidades_titulo,
+    .interesses_titulo{
+        padding: 0 5rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos{
+        padding: 1rem;
+    }
+}
