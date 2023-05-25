@@ -334,6 +334,13 @@ li,
         padding-top: 0rem;
     }
 
+    .meus_dados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
     .meus_dados_titulo{
         display: flex;
         justify-content: center;
@@ -400,5 +407,86 @@ li,
     .formacao_paragrafos,
     .experiencias_paragrafos{
         padding: 1rem;
+    }
+}
+
+@media(max-width:480px){
+    .menu_lista{
+        padding: 20px 20px 0px 0px;
+    }
+
+    .cabecalho{
+        background-color: transparent;
+    }
+
+    .secao_dados{
+        height: 465px;
+    }
+
+    .meus_dados_titulo{
+        width: 300px;
+        font-size: 36px;
+    }
+
+    .meus_dados_titulo_subtitulo{
+        width: 210px;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+
+    .meus_dados_titulo_paragrafo{
+        font-size: 13px;
+        padding-right: 37px;
+    }
+
+    .meus_dados_titulo_paragrafo img{
+        width: 14px;
+        height: 14px;
+    }
+
+    .sociais{
+        position: absolute;
+        top: 425px;
+    }
+
+    .sociais img{
+        width: 30px;
+        height:30px;
+    }
+
+    .foto_perfil{
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .sobre_mim_titulo{
+        font-size: 1.4rem;
+    }
+
+    .sobre_mim_texto{
+        font-size: 1rem;
+    }
+
+    .formacao_titulo,
+    .experiencias_titulo,
+    .habilidades_titulo,
+    .interesses_titulo{
+        padding: 0 100px 0 0rem;
+        font-size: 1rem;
+    }
+
+    .habilidades_titulo,
+    .interesses_titulo{
+        padding-right: 150px;
+    }
+
+    .formacao_paragrafo_mobile,
+    .experiencias_paragrafo_mobile{
+        width: 295px;
+    }
+
+    .rodape_paragrafo,
+    .rodape_autor{
+        font-size: 1rem;
     }
 }
