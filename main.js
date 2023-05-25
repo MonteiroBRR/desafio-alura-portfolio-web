@@ -6,7 +6,6 @@ function mostraMenuMobile() {
     } else {
         menuMobile.classList.add('revelaElemento')
         document.querySelector('.icone').src = "assets/close.svg"
-
     }
 }
 

@@ -23,18 +23,21 @@ body {
     font-weight: 400;
 }
 
-.menu_lista{
+.menu_lista {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 
 }
 
-.menu_mobile_icone{
+.menu_mobile_icone {
     display: none;
 }
 
-.menu_mobile{
+.menu_mobile {
+    width: 200px;
     display: none;
+    background-color: var(--cor-primaria);
+    margin-left: 120px;
 }
 
 .cabecalho {
@@ -101,7 +104,7 @@ li,
 }
 
 .foto_perfil_com_sociais {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.87rem;
@@ -167,8 +170,9 @@ li,
     gap: 21.75rem;
     padding: 2rem
 }
-.background-caixa, 
-.background-caixa-interesses{
+
+.background-caixa,
+.background-caixa-interesses {
     font-size: 1.6rem;
     background-color: var(--cor-primaria);
     border-radius: 1.5rem;
@@ -193,19 +197,19 @@ li,
     padding: 2rem 11.87rem;
 }
 
-.icone_interesses{
+.icone_interesses {
     cursor: pointer;
     width: 6.25rem;
     height: 6.25rem;
     transition-duration: 0.5s
 }
 
-.icone_interesses:hover{
+.icone_interesses:hover {
     width: 130px;
     height: 130px;
 }
 
-.caixa_interesses{
+.caixa_interesses {
     display: none;
 }
 
@@ -216,6 +220,11 @@ li,
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+}
+
+.rodape_informacoes {
+    display: flex;
+    padding-top: 24px;
 }
 
 .rodape_paragrafo {
@@ -245,7 +254,7 @@ li,
     }
 
     .background-caixa,
-    .background-caixa-interesses{
+    .background-caixa-interesses {
         padding: 2rem;
         font-size: 1.5rem;
     }
@@ -273,40 +282,13 @@ li,
 }
 
 @media(max-width:930px) {
-    .cabecalho_ul{
-        display: none;
+    .li {
+        font-size: 18px;
     }
 
-    .menu_lista{
-        justify-content: end;
-        padding: 30px 25px 0px 0px;
-    }
-
-    .menu_mobile_icone{
-        display: block;
-    }
-
-    .menu_mobile_icone button{
-        background-color: var(--cor-secundaria);
-        border: #ca8e61 3px solid;
-        cursor: pointer;
-    }
-
-    .revelaElemento{
-        display: block;
-    }
-
-    .menu_mobile_ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-        list-style: none;
-    }
-
-    .secao_sobre_mim{
-        gap:4rem;
-        padding: 3rem 9rem ;
+    .secao_sobre_mim {
+        gap: 4rem;
+        padding: 3rem 9rem;
     }
 
     .background-caixa {
@@ -319,7 +301,7 @@ li,
         display: var(--cor-primaria);
     }
 
-    .hard_skills{
+    .hard_skills {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -327,166 +309,244 @@ li,
 
 }
 
-@media(max-width:785px){
+@media(max-width:785px) {
+    .cabecalho {
+        position: static;
+        position: relative;
+    }
+
+    .cabecalho_ul {
+        display: none;
+    }
+
+    .menu_lista {
+        justify-content: end;
+        padding: 30px 25px 0px 0px;
+    }
+
+    .menu_mobile_icone {
+        display: block;
+    }
+
+    .menu_mobile_icone button {
+        background-color: var(--cor-secundaria);
+        /*border: #ca8e61 3px solid;*/
+        cursor: pointer;
+    }
+
+    .revelaElemento {
+        display: block;
+    }
+
+    .botaoMenuMobile {
+        position: absolute;
+        right: 20px;
+    }
+
+    .botaoMenuMobile img {
+        background-color: var(--cor-terciaria);
+    }
+
+    .menu_mobile {
+        position: absolute;
+        right: 30px;
+    }
+
+    .menu_mobile_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    .menu_mobile_ul a {
+        font-size: 1.2rem;
+    }
+
     .secao_dados {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         height: 59rem;
         padding-top: 0rem;
     }
 
-    .meus_dados{
+    .meus_dados {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .meus_dados_titulo{
+    .meus_dados_titulo {
         display: flex;
         justify-content: center;
         font-size: 3rem;
     }
 
-    .meus_dados_titulo_subtitulo{
+    .meus_dados_titulo_subtitulo {
         display: flex;
         justify-content: center;
     }
 
-    .sociais{
+    .sociais {
         position: absolute;
         top: 850px;
     }
 
-    .secao_sobre_mim{
+    .secao_sobre_mim {
         padding: 1rem;
     }
 
-    .sobre_mim_texto{
+    .sobre_mim_texto {
         font-size: 1.4rem;
     }
 
-    .imagem_sobre_mim{
+    .imagem_sobre_mim {
         display: none;
     }
 }
 
 @media (max-width:690px) {
+
     .formacao_paragrafos,
-    .experiencias_paragrafos{
+    .experiencias_paragrafos {
         padding: 2rem 5rem;
     }
 
     .habilidade_icone,
-    .icone_interesses{
+    .icone_interesses {
         width: 3rem;
         height: 3rem;
     }
 
-    .icone_interesses:hover{
+    .icone_interesses:hover {
         width: 4.3rem;
         height: 4.3rem;
     }
 
     .habilidades_logo,
     .interesses_logo {
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
     }
-    
+
 }
 
-@media(max-width:558px){
+@media(max-width:558px) {
+
     .formacao_titulo,
     .experiencias_titulo,
     .habilidades_titulo,
-    .interesses_titulo{
+    .interesses_titulo {
         padding: 0 5rem;
     }
 
     .formacao_paragrafos,
-    .experiencias_paragrafos{
+    .experiencias_paragrafos {
         padding: 1rem;
     }
 }
 
-@media(max-width:480px){
-    .menu_lista{
+@media(max-width:480px) {
+    .menu_lista {
         padding: 20px 20px 0px 0px;
     }
 
-    .cabecalho{
-        background-color: transparent;
+    .botaoMenuMobile {
+        width: 32px;
+        height: 32px;
     }
 
-    .secao_dados{
+    .botaoMenuMobile img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .menu_mobile_ul a {
+        font-size: 1rem;
+    }
+
+    .secao_dados {
         height: 465px;
     }
 
-    .meus_dados_titulo{
+    .meus_dados_titulo {
         width: 300px;
         font-size: 36px;
     }
 
-    .meus_dados_titulo_subtitulo{
+    .meus_dados_titulo_subtitulo {
         width: 210px;
         font-size: 16px;
         padding-bottom: 5px;
     }
 
-    .meus_dados_titulo_paragrafo{
+    .meus_dados_titulo_paragrafo {
         font-size: 13px;
         padding-right: 37px;
     }
 
-    .meus_dados_titulo_paragrafo img{
+    .meus_dados_titulo_paragrafo img {
         width: 14px;
         height: 14px;
     }
 
-    .sociais{
+    .sociais {
         position: absolute;
-        top: 425px;
+        top: 440px;
     }
 
-    .sociais img{
+    .sociais img {
         width: 30px;
-        height:30px;
+        height: 30px;
     }
 
-    .foto_perfil{
+    .foto_perfil {
         height: 12.5rem;
         width: 12.5rem;
     }
 
-    .sobre_mim_titulo{
+    .sobre_mim_titulo {
         font-size: 1.4rem;
     }
 
-    .sobre_mim_texto{
+    .sobre_mim_texto {
         font-size: 1rem;
     }
 
     .formacao_titulo,
     .experiencias_titulo,
     .habilidades_titulo,
-    .interesses_titulo{
+    .interesses_titulo {
         padding: 0 100px 0 0rem;
         font-size: 1rem;
     }
 
     .habilidades_titulo,
-    .interesses_titulo{
+    .interesses_titulo {
         padding-right: 150px;
     }
 
     .formacao_paragrafo_mobile,
-    .experiencias_paragrafo_mobile{
+    .experiencias_paragrafo_mobile {
         width: 295px;
     }
 
+    .rodape_informacoes {
+        width: 260px;
+        display: flex;
+        align-items: center;
+    }
+
+    .rodape_informacoes img {
+        width: 41px;
+        height: 41px;
+    }
+
     .rodape_paragrafo,
-    .rodape_autor{
+    .rodape_autor {
         font-size: 1rem;
+        padding: 1rem;
     }
 }
