@@ -1,0 +1,42 @@
+.rodape {
+    height: 12.5rem;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.rodape_informacoes {
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.rodape_paragrafo {
+    font-size: 1.25rem;
+    padding: 1.56rem;
+}
+
+.rodape_autor {
+    padding: 1.56rem;
+    text-align: center;
+}
+
+@media(max-width:480px) {
+    .rodape_informacoes {
+        width: 16.25rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .rodape_informacoes img {
+        width: 2.56rem;
+        height: 2.56rem;
+    }
+
+    .rodape_paragrafo,
+    .rodape_autor {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

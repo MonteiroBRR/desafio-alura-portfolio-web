@@ -1,0 +1,228 @@
+.secao_sobre_mim {
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+    padding: 6.25rem 11.87rem;
+}
+
+.imagem_sobre_mim {
+    width: 36.75rem;
+    height: 37.5rem;
+    object-fit: cover;
+}
+
+.sobre_mim_titulo {
+    font-size: 1.87rem;
+    padding-bottom: 2rem;
+}
+
+.sobre_mim_texto {
+    font-size: 1.56rem;
+    text-align: justify;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+}
+
+.formacao_titulo,
+.experiencias_titulo,
+.habilidades_titulo,
+.interesses_titulo {
+    font-size: 1.87rem;
+    padding: 0rem 11.87rem;
+}
+
+.formacao_paragrafos,
+.experiencias_paragrafos {
+    display: flex;
+    justify-content: center;
+    gap: 21.75rem;
+    padding: 2rem
+}
+
+.background-caixa,
+.background-caixa-interesses {
+    font-size: 1.6rem;
+    background-color: var(--cor-primaria);
+    border-radius: 1.5rem;
+    height: 11.18rem;
+    width: 31.25rem;
+    padding: 2rem;
+}
+
+.formacao_paragrafo_mobile,
+.experiencias_paragrafo_mobile {
+    background-color: var(--cor-primaria);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    height: 8, 75rem;
+    width: 23.6rem;
+    padding: 1rem;
+    display: none;
+}
+
+.habilidades_logo,
+.interesses_logo {
+    padding: 2rem 11.87rem;
+}
+
+.icone_interesses {
+    cursor: pointer;
+    width: 6.25rem;
+    height: 6.25rem;
+    transition-duration: 0.5s
+}
+
+.icone_interesses:hover {
+    width: 8.1rem;
+    height: 8.1rem;
+}
+
+.caixa_interesses {
+    display: none;
+}
+
+@media(max-width:1566px) {
+    .secao_sobre_mim {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        gap: 10rem;
+        padding: 2rem 10.5rem;
+    }
+
+    .background-caixa,
+    .background-caixa-interesses {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1210px) {
+
+
+    .background-caixa,
+    .background-caixa-interesses {
+        padding: 1rem;
+        font-size: 1.2rem;
+        height: auto;
+    }
+
+    .secao_sobre_mim {
+        gap: 6rem;
+        padding: 6rem 9rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        padding: 2rem 9rem;
+    }
+}
+
+@media(max-width:930px) {
+    .secao_sobre_mim {
+        gap: 4rem;
+        padding: 3rem 9rem;
+    }
+
+    .background-caixa {
+        display: none;
+    }
+
+    .formacao_paragrafo_mobile,
+    .experiencias_paragrafo_mobile {
+        display: contents;
+        display: var(--cor-primaria);
+    }
+
+    .hard_skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media(max-width:785px) {
+    .secao_sobre_mim {
+        padding: 1rem;
+    }
+
+    .sobre_mim_texto {
+        font-size: 1.4rem;
+    }
+
+    .imagem_sobre_mim {
+        display: none;
+    }
+}
+
+@media (max-width:690px) {
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        padding: 2rem 5rem;
+    }
+
+    .habilidade_icone,
+    .icone_interesses {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icone_interesses:hover {
+        width: 4.3rem;
+        height: 4.3rem;
+    }
+
+    .habilidades_logo,
+    .interesses_logo {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:558px) {
+    .formacao_titulo,
+    .experiencias_titulo,
+    .habilidades_titulo,
+    .interesses_titulo {
+        padding: 0 5rem;
+    }
+
+    .formacao_paragrafos,
+    .experiencias_paragrafos {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .sobre_mim_titulo {
+        font-size: 1.4rem;
+    }
+
+    .sobre_mim_texto {
+        font-size: 1rem;
+    }
+
+    .formacao_titulo,
+    .experiencias_titulo,
+    .habilidades_titulo,
+    .interesses_titulo {
+        padding: 0 100px 0 0rem;
+        font-size: 1rem;
+    }
+
+    .habilidades_titulo,
+    .interesses_titulo {
+        padding-right: 2.40rem;
+    }
+
+    .formacao_paragrafo_mobile,
+    .experiencias_paragrafo_mobile {
+        width: 18.43rem;
+    }
+}

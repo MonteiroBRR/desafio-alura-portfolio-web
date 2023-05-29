@@ -1,0 +1,142 @@
+.secao_dados {
+    display: flex;
+    justify-content: center;
+    gap: 4.3rem;
+    height: 45rem;
+    background-color: var(--cor-primaria);
+    padding-top: 10rem;
+    width: 100vw;
+}
+
+.meus_dados_titulo {
+    font-size: 6rem;
+}
+
+.meus_dados_titulo_subtitulo {
+    padding: 0rem 0rem 3.7rem 0.4rem;
+}
+
+.contato {
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+.meus_dados_titulo_paragrafo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 0.75rem;
+}
+
+.foto_perfil {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 26.62rem;
+    border: solid 0.25rem;
+}
+
+.foto_perfil_com_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.87rem;
+}
+
+.sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo_linkedin,
+.logo_github,
+.logo_instagram {
+    width: 3rem;
+    height: 3rem;
+    transition-duration: 0.5s;
+}
+
+.logo_linkedin:hover,
+.logo_github:hover,
+.logo_instagram:hover {
+    width: 4.37rem;
+    height: 4.37rem;
+}
+
+@media(max-width:1566px) {
+    .secao_dados {
+        gap: 0rem;
+    }
+}
+
+@media(max-width:785px) {
+    .secao_dados {
+        flex-direction: column-reverse;
+        height: 59rem;
+        padding-top: 0rem;
+    }
+
+    .meus_dados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .meus_dados_titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .meus_dados_titulo_subtitulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sociais {
+        position: absolute;
+        top: 53.12rem;
+    }
+}
+
+@media(max-width:480px) {
+    .secao_dados {
+        height: 29rem;
+    }
+
+    .meus_dados_titulo {
+        width: 18.75rem;
+        font-size: 2.25rem;
+    }
+
+    .meus_dados_titulo_subtitulo {
+        width: 13.12rem;
+        font-size: 1rem;
+        padding-bottom: 0.31rem;
+    }
+
+    .meus_dados_titulo_paragrafo {
+        font-size: 0.81rem;
+        padding-right: 2.31rem;
+    }
+
+    .meus_dados_titulo_paragrafo img {
+        width: 0.87rem;
+        height: 0.87rem;
+    }
+
+    .sociais {
+        position: absolute;
+        top: 27.5rem;
+    }
+
+    .sociais img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .foto_perfil {
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+}

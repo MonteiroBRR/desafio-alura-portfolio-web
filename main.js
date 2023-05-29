@@ -1,12 +1,12 @@
 function mostraMenuMobile() {
     let menuMobile = document.querySelector('.menu_mobile');
     if (menuMobile.classList.contains('revelaElemento')) {
-        menuMobile.classList.remove('revelaElemento');
-        document.querySelector('.icone').src = "assets/menuMobile.svg"
+         menuMobile.classList.remove('revelaElemento');
+         document.querySelector('.icone').src = "assets/menuMobile.svg"
     } else {
-        menuMobile.classList.add('revelaElemento')
-        document.querySelector('.icone').src = "assets/close.svg"
-    }
+         menuMobile.classList.add('revelaElemento')
+         document.querySelector('.icone').src = "assets/close.svg"
+        }
 }
 
 document.querySelector('.botaoMenuMobile').onclick = mostraMenuMobile;

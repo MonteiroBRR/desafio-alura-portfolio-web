@@ -1,0 +1,68 @@
+.menu_mobile_icone {
+    display: none;
+}
+
+.menu_mobile {
+    width: 12.5rem;
+    display: none;
+    background-color: var(--cor-primaria);
+    margin-left: 7.5rem;
+}
+
+@media(max-width:785px) {
+    .menu_mobile_icone {
+        display: block;
+    }
+
+    .menu_mobile_icone button {
+        background-color: var(--cor-secundaria);
+        /*border: #ca8e61 3px solid;*/
+        cursor: pointer;
+    }
+
+    .revelaElemento {
+        display: block;
+    }
+
+    .botaoMenuMobile {
+        position: absolute;
+        right: 1.25rem;
+    }
+
+    .botaoMenuMobile img {
+        background-color: var(--cor-terciaria);
+    }
+
+    .menu_mobile {
+        position: absolute;
+        right: 1.87rem;
+    }
+
+    .menu_mobile_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    .menu_mobile_ul a {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:480px) {
+    .botaoMenuMobile {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .botaoMenuMobile img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .menu_mobile_ul a {
+        font-size: 1rem;
+    }
+}
