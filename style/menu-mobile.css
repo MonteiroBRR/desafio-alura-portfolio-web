@@ -16,7 +16,6 @@
 
     .menu_mobile_icone button {
         background-color: var(--cor-secundaria);
-        /*border: #ca8e61 3px solid;*/
         cursor: pointer;
     }
 

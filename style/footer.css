@@ -14,11 +14,11 @@
 
 .rodape_paragrafo {
     font-size: 1.25rem;
-    padding: 1.56rem;
+    margin: 1.56rem;
 }
 
 .rodape_autor {
-    padding: 1.56rem;
+    margin: 1.56rem;
     text-align: center;
 }
 
@@ -37,6 +37,6 @@
     .rodape_paragrafo,
     .rodape_autor {
         font-size: 1rem;
-        padding: 1rem;
+        margin: 1rem;
     }
 }

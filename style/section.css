@@ -1,7 +1,7 @@
 .secao_dados {
     display: flex;
     justify-content: center;
-    gap: 4.3rem;
+    gap: 7.3rem;
     height: 45rem;
     background-color: var(--cor-primaria);
     padding-top: 10rem;
@@ -13,19 +13,19 @@
 }
 
 .meus_dados_titulo_subtitulo {
-    padding: 0rem 0rem 3.7rem 0.4rem;
+    margin: 0rem 0rem 3.7rem 0.4rem;
 }
 
 .contato {
     font-size: 2rem;
-    padding: 0.4rem;
+    margin: 0.4rem;
 }
 
 .meus_dados_titulo_paragrafo {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .foto_perfil {
@@ -64,7 +64,14 @@
 
 @media(max-width:1566px) {
     .secao_dados {
-        gap: 0rem;
+        gap: 4rem;
+    }
+}
+
+@media(max-width:930px){
+    .foto_perfil{
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -95,13 +102,18 @@
 
     .sociais {
         position: absolute;
-        top: 53.12rem;
+        top: 58.12rem;
     }
 }
 
 @media(max-width:480px) {
     .secao_dados {
-        height: 29rem;
+        height: 30rem;
+        gap: 1rem
+    }
+
+    .contato{
+        margin-right: 1.56rem;
     }
 
     .meus_dados_titulo {
@@ -112,12 +124,12 @@
     .meus_dados_titulo_subtitulo {
         width: 13.12rem;
         font-size: 1rem;
-        padding-bottom: 0.31rem;
+        margin-bottom: 0.31rem;
     }
 
     .meus_dados_titulo_paragrafo {
         font-size: 0.81rem;
-        padding-right: 2.31rem;
+        margin-right: 2.31rem;
     }
 
     .meus_dados_titulo_paragrafo img {
@@ -127,7 +139,7 @@
 
     .sociais {
         position: absolute;
-        top: 27.5rem;
+        top: 32.5rem;
     }
 
     .sociais img {

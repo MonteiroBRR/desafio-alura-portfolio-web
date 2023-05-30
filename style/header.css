@@ -2,21 +2,13 @@
     width: 100vw;
     background-color: var(--cor-primaria);
     position: fixed;
-    right: 0rem;
-    left: 0rem;
-}
-
-.menu_lista {
-    display: flex;
-    justify-content: space-around;
-
+    padding: 2rem;
 }
 
 .cabecalho_ul {
     display: flex;
     justify-content: center;
     gap: 3.1rem;
-    padding-top: 0.6rem;
 }
 
 li,
@@ -45,15 +37,10 @@ li,
     .cabecalho_ul {
         display: none;
     }
-
-    .menu_lista {
-        justify-content: end;
-        padding: 30px 25px 0px 0px;
-    }
 }
 
 @media(max-width:480px) {
     .menu_lista {
-        padding: 20px 20px 0px 0px;
+        padding: 1.25rem 1.25rem 0rem 0rem;
     }
 }
