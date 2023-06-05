@@ -1,3 +1,5 @@
 # desafio-alura-portfolio-web
-Desafio apresentado pela Alura para a construção de um portfólio.
-Ainda em desenvolvimento.
+
+Este foi um desafio proposto pela Alura para a criação de um portfólio.
+
+O objetivo era colocar em prática todo o conhecimento adquirido durante o Alura Include.
