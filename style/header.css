@@ -14,8 +14,12 @@
 li,
 .li {
     font-size: 1.5rem;
-    text-decoration: none;
     color: var(--cor-terciaria);
+}
+
+.li_decoracao::before {
+    content: "•";
+    margin-right: 30px;
 }
 
 .li:hover {
