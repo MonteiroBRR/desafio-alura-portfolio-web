@@ -58,8 +58,7 @@
 .logo_linkedin:hover,
 .logo_github:hover,
 .logo_instagram:hover {
-    width: 4.37rem;
-    height: 4.37rem;
+    transform: scale(1.6);
 }
 
 @media(max-width:1566px) {

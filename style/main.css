@@ -82,8 +82,7 @@
 }
 
 .icone_interesses:hover {
-    width: 8.1rem;
-    height: 8.1rem;
+    transform: scale(1.5);
 }
 
 .caixa_interesses {
